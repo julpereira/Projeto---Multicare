@@ -1,0 +1,49 @@
+.boasvindas { 
+    margin-top:15%;
+    text-align: center;
+    font-size: 2vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.agendar {
+    all: unset;
+    background-color: red;
+    font-weight: bold;
+    color: white;
+    border-radius: 25px;
+    width: 12vw;
+    max-width: 200px;
+    height: 4vh;
+    text-align: center;  
+    margin-top: 1%;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .boasvindas {
+        font-size: 4vw;
+    }
+
+    .agendar {
+        width: 40vw;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .boasvindas {
+        font-size: 5vw;
+    }
+
+    .agendar {
+        width: 60vw;
+        font-size: 0.8rem;
+    }
+}
+
+.logo {
+    width: 10vw;
+    max-width: 50px;
+}

@@ -1,0 +1,119 @@
+.header {
+    background-color: #f8f9fa;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+.barraNavegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc; 
+}
+
+.imagemLogo {
+    height: 80px;
+}
+
+.itensMenu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-grow: 1;
+}
+  
+.itensMenu li {
+    position: relative;
+}
+  
+.botaoMenu {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+  
+.subMenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    min-width: 150px;
+    border-radius: 5px;
+}
+  
+.itensMenu li:hover .subMenu {
+    display: block; 
+}
+  
+.itemSubMenu {
+    outline: none;
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.3s;
+}
+  
+.itemSubMenu:hover {
+    background: #f0f0f0;
+}
+
+.botaoMenu:hover {
+    text-decoration: underline;
+}
+
+.fonte:hover {
+    text-decoration: underline;
+}
+
+.fonte {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.h4 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .barraNavegacao {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .itensMenu {
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      align-items: center;
+    }
+  
+    .itensMenu li {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .botaoMenu {
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .subMenu {
+      position: static;
+      width: 100%;
+      box-shadow: none;
+      background-color: transparent;
+      text-align: center;
+    }
+  
+    .itemSubMenu {
+      padding: 10px;
+      width: 100%;
+    }
+}
