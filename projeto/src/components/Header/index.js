@@ -16,7 +16,6 @@ export default function Header() {
 			<nav className={styles.barraNavegacao}>
 			  <div className={styles.logoContainer}>
 				<Image src="/imagens/logo.png" width="80" height="80" alt="Logo" className={styles.imagemLogo}  />
-				<h4 className={styles.h4}>Multicare</h4>
 			  </div>
 	
 			  	<ul className={styles.itensMenu}>

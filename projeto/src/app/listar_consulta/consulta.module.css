@@ -1,0 +1,99 @@
+.divconsultas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.subContainer {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.botao {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.botao:hover {
+    background-color: red;
+}
+
+.tabela {
+    width: 90%;
+    max-width: 1200px;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.tabela table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.th, .td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.th {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.th:first-child {
+    cursor: pointer;
+}
+
+.consulta:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.botaoContainer {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .divconsultas {
+        padding: 10px;
+    }
+
+    .subContainer {
+        max-width: 100%;
+    }
+
+    .botao {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .tabela {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .tabela table {
+        width: 100%;
+    }
+
+    .th, .td {
+        padding: 10px;
+    }
+
+    .botaoContainer {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

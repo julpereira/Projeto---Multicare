@@ -1,7 +1,7 @@
 .boasvindas { 
     margin-top:15%;
     text-align: center;
-    font-size: 1vw;
+    font-size: 2vw;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -10,14 +10,14 @@
     background-color: red;
     font-weight: bold;
     color: white;
-    border-radius: 25px;
-    width: 8vw;
+    border-radius: 15px;
+    width: 10vw;
     max-width: 200px;
     height: 4vh;
     text-align: center;  
     margin-top: 1%;
-    padding: 10px;
-    font-size: 1rem;
+    padding: 5px;
+    font-size: 15px;
     cursor: pointer;
 }
 
