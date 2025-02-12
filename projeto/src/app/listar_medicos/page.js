@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import styles from './medicos.module.css';
 
-export default function Paciente() {
+export default function Medicos() {
     const [busca, setBusca] = useState("");
     const [medico, setMedico] = useState([]);
     const [botaoAberto, setbotaoAberto] = useState(false);

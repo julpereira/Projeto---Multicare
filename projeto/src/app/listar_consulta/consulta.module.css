@@ -12,6 +12,21 @@
     text-align: center;
 }
 
+.listam {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.botaoContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; 
+    max-width: 600px; 
+    gap: 10px; 
+    margin-top: 20px;
+}
+
 .botao {
     background-color: red;
     color: white;
@@ -19,11 +34,64 @@
     border: none;
     border-radius: 15px;
     cursor: pointer;
-    margin-top: 10px;
+    width: 30%; 
+}
+
+.listac {
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .botao:hover {
-    background-color: red;
+    background-color: #ff00008f;
+}
+
+.botaoEstilo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    max-width: 90%;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.lista {
+    list-style: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.lista li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.lista li:hover {
+    background-color: #f0f0f0;
 }
 
 .tabela {
@@ -54,15 +122,8 @@
     cursor: pointer;
 }
 
-.consulta:nth-child(even) {
+.medico:nth-child(even) {
     background-color: #f9f9f9;
-}
-
-.botaoContainer {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 20px;
 }
 
 @media (max-width: 768px) {
@@ -72,19 +133,20 @@
 
     .subContainer {
         max-width: 100%;
+        padding: 10px;
+    }
+
+    .listam {
+        font-size: 1.2rem;
     }
 
     .botao {
         width: 100%;
+        max-width: none;
         padding: 12px;
     }
 
     .tabela {
-        width: 100%;
-        overflow-x: auto;
-    }
-
-    .tabela table {
         width: 100%;
     }
 
@@ -92,8 +154,7 @@
         padding: 10px;
     }
 
-    .botaoContainer {
-        flex-direction: column;
-        gap: 10px;
+    .medico:nth-child(even) {
+        background-color: #f9f9f9;
     }
 }

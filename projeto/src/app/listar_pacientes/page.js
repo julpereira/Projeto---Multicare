@@ -33,7 +33,7 @@ export default function Pacientes() {
     return (
         <div className={styles.divpacientes}>
             <div className={styles.subContainer}>
-                <h1 className={styles.listaPac}>Lista de Pacientes</h1>
+                <h1 className={styles.listap}>Lista de Pacientes</h1>
                 <button className={styles.botao} onClick={() => setBotaoAberto(true)}>Buscar Paciente</button>
                 
                 {botaoAberto && (
