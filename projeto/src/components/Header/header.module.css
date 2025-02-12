@@ -11,8 +11,12 @@
     border-bottom: 1px solid #ccc; 
 }
 
-.imagemLogo {
-    height: 80px;
+
+.logoContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
 }
 
 .itensMenu {
@@ -21,6 +25,11 @@
     gap: 20px;
     justify-content: center;
     flex-grow: 1;
+    align-items: center;
+    
+}
+.fonte{
+    font-size: 130%;
 }
   
 .itensMenu li {
@@ -78,7 +87,6 @@
 
 .h4 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
 }
 
 @media (max-width: 768px) {
