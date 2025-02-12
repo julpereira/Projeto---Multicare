@@ -9,7 +9,7 @@ export default function Home() {
       Com dedicação, excelência e um atendimento humanizado,<br></br>
       estamos prontos para oferecer o melhor para a sua saúde e bem-estar.<br></br>
       Conte com a nossa equipe sempre que precisar!</p>
-      <button className={styles.agendar}><Link href="/agendar">Agendar consulta</Link></button>
+      <button className={styles.agendar}><Link href="/agendar_consulta">Agendar consulta</Link></button>
     </div>   
 
   );
