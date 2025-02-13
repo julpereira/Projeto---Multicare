@@ -46,7 +46,6 @@ export default function Consultas() {
                     <button className={styles.botao} onClick={() => setBotaoAbertoMedico(true)}>Buscar Por Médico</button>
                 </div>
 
-              
                 {botaoAbertoPaciente && (
                     <div className={styles.botaoEstilo} onClick={() => setBotaoAbertoPaciente(false)}>
                         <div className={styles.button} onClick={(e) => e.stopPropagation()}>
@@ -60,19 +59,13 @@ export default function Consultas() {
                             />
                             <ul className={styles.lista}>
                                 {consultasFiltradasPaciente.map((consulta) => (
-                                    <li
-                                        key={consulta.id}
-                                        onClick={() => setBotaoAbertoPaciente(false)}
-                                    >
-                                        {consulta.paciente}
-                                    </li>
+                                    <li key={consulta.id}>{consulta.paciente}</li>
                                 ))}
                             </ul>
                         </div>
                     </div>
                 )}
 
-       
                 {botaoAbertoMedico && (
                     <div className={styles.botaoEstilo} onClick={() => setBotaoAbertoMedico(false)}>
                         <div className={styles.button} onClick={(e) => e.stopPropagation()}>
@@ -86,12 +79,7 @@ export default function Consultas() {
                             />
                             <ul className={styles.lista}>
                                 {consultasFiltradasMedico.map((consulta) => (
-                                    <li
-                                        key={consulta.id}
-                                        onClick={() => setBotaoAbertoMedico(false)}
-                                    >
-                                        {consulta.medico}
-                                    </li>
+                                    <li key={consulta.id}>{consulta.medico}</li>
                                 ))}
                             </ul>
                         </div>
@@ -111,8 +99,8 @@ export default function Consultas() {
                         </tr>
                     </thead>
                     <tbody>
-                        {(consultasFiltradasPaciente.length > 0 || consultasFiltradasMedico.length > 0) ? (
-                            (buscaPaciente ? consultasFiltradasPaciente : consultasFiltradasMedico).map((consulta) => (
+                        {consultas.length > 0 ? (
+                            consultas.map((consulta) => (
                                 <tr key={consulta.id} className={styles.consulta}>
                                     <td className={styles.td}>{consulta.id}</td>
                                     <td className={styles.td}>{consulta.medico}</td>
@@ -123,7 +111,7 @@ export default function Consultas() {
                             ))
                         ) : (
                             <tr>
-                                <td colSpan="3" className={styles.td}>Carregando consultas...</td>
+                                <td colSpan="5" className={styles.td}>Carregando consultas...</td>
                             </tr>
                         )}
                     </tbody>
