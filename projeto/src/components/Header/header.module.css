@@ -8,14 +8,16 @@
     border-bottom: 1px solid #ccc; 
 }
 
+
 .logoContainer{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10%;
 }
 
 .imagemLogo{
-    margin-left: 15%;    
+    margin-left: 40%;    
 }
 
 .itensMenu {
