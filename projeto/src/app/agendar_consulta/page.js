@@ -17,7 +17,7 @@ const AgendarConsulta = () => {
         fetch('https://api-clinica-2a.onrender.com/pacientes')
             .then(response => response.json())
             .then(data => setPacientes(data));
-        
+
         fetch('https://api-clinica-2a.onrender.com/medicos')
             .then(response => response.json())
             .then(data => setMedicos(data));

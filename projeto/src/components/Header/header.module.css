@@ -91,6 +91,20 @@
     font-size: 20px;
 }
 
+.menuToggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: transparent;
+    border: none;
+    width: 50px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 20;
+    margin-bottom: -40px;
+}
+
 @media (max-width: 768px) {
     .barraNavegacao {
       flex-direction: column;
@@ -127,4 +141,6 @@
       padding: 10px;
       width: 100%;
     }
+
+
 }
