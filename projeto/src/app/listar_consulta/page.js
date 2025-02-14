@@ -15,7 +15,7 @@ export default function Consultas() {
                 const response = await fetch("https://api-clinica-2a.onrender.com/consultas");
                 const data = await response.json();
                 console.log("Consultas recebidas:", data);
-                
+
                 if (Array.isArray(data)) {
                     setConsultas(data);
                 } else {

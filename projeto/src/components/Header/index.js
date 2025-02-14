@@ -10,6 +10,7 @@ export default function Header() {
 		setIsNavVisible(isNavVisible === menuName ? null : menuName);
 	};
 
+
 	return (
 		<div>
 			<header className="header">
@@ -18,7 +19,7 @@ export default function Header() {
 						<Image src="/imagens/logo.png" width="80" height="80" alt="Logo" className={styles.imagemLogo} />
 					</div>
 
-		
+
 					<ul className={styles.itensMenu}>
 						<li>
 							<Link href="/" className={styles.fonte}>Início </Link>
