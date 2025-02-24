@@ -12,12 +12,6 @@
     text-align: center;
 }
 
-.listam {
-    font-size: 1.5rem;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
 .botaoContainer {
     display: flex;
     justify-content: space-between;

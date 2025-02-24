@@ -2,14 +2,14 @@
     width: 60%;
     margin: 0 auto;
     padding: 20px;
-    margin-bottom: 50%;
+    margin-top: 2%;
 }
 
 .titulo {
+    font-size: 2rem;
+    margin-top: -2%;
+    margin-bottom: 9%;
     text-align: center;
-    color: black;
-    font-size: 24px;
-    margin-bottom: 20px;
 }
 
 .formulario {
@@ -20,14 +20,13 @@
 
 .input {
     padding: 10px;
-    border: 1px solid #ff6666;
+    border: 1px solid red;
     border-radius: 5px;
     font-size: 16px;
-}
-
+} 
 
 .botao {
-    background-color: #cc0000;
+    background-color: red;
     color: white;
     padding: 12px;
     border: none;
