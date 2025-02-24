@@ -17,10 +17,11 @@
     margin-top: 20px;
     margin-bottom: 10px;
     text-align: center;
+    color: #b30000
 }
 
 .botao {
-    background-color: red;
+    background-color: #b30000;
     color: white;
     padding: 10px 20px;
     border: none;
