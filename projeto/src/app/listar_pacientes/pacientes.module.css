@@ -95,12 +95,12 @@
     padding: 15px;
     border: 1px solid #ddd;
     text-align: left;
+    background-color: #ffffff;
 }
 
 .th {
     background-color: red;
     color: white;
-    cursor: pointer;
 }
 
 .th:first-child {
